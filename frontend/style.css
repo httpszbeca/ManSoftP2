@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+}
+
+h1 {
+  color: #333;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.aba {
+  margin-top: 20px;
+  background: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.produto-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.linha-item {
+  margin-bottom: 6px;
+}
+
+.pedido-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.status-pendente { color: orange; }
+.status-pago { color: blue; }
+.status-enviado { color: purple; }
+.status-entregue { color: green; }
+.status-cancelado { color: red; }

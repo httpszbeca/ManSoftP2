@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Pedidos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sistema de Pedidos</h1>
+
+  <div class="tabs">
+    <button onclick="mostrarAba('produtos')">Produtos</button>
+    <button onclick="mostrarAba('novoPedido')">Novo Pedido</button>
+    <button onclick="mostrarAba('pedidos')">Pedidos</button>
+  </div>
+
+  <div id="aba-produtos" class="aba">
+    <h2>Produtos</h2>
+    <div id="listaProdutos"></div>
+  </div>
+
+  <div id="aba-novoPedido" class="aba" style="display:none">
+    <h2>Novo Pedido</h2>
+    <label>Cliente:</label>
+    <select id="selectCliente"></select>
+    <div id="itensPedido"></div>
+    <button onclick="adicionarLinhaItem()">+ item</button>
+    <br /><br />
+    <button onclick="enviarPedido()">Finalizar Pedido</button>
+    <div id="resultadoPedido"></div>
+  </div>
+
+  <div id="aba-pedidos" class="aba" style="display:none">
+    <h2>Pedidos</h2>
+    <button onclick="carregarPedidos()">Atualizar lista</button>
+    <div id="listaPedidos"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/produtos.js"></script>
+  <script src="js/clientes.js"></script>
+  <script src="js/pedidos.js"></script>
+</body>
+</html>
